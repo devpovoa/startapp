@@ -1,0 +1,21 @@
+{% extends "polls/base.html" %} {% block title %}Lista de Enquetes Ativas |
+Enquestes Online{% endblock %} {% block meta %}
+<meta
+  name="description"
+  content="Veja as enquestes mais recentes e participe votando na sua opção favorita."
+/>
+{% endblock %} {% block header %}
+<h1>Lista de Enquestes</h1>
+{% endblock %} {% block content %} {% if latest_question_list %}
+<ul>
+  {% for question in latest_question_list %}
+  <li>
+    <a href="{% url 'polls:detail' question.id %}"
+      >{{ question.question_text }}</a
+    >
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No polls are available.</p>
+{% endif %} {% endblock %}
