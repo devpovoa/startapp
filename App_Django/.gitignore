@@ -272,6 +272,9 @@ pyrightconfig.json
 pyvenv.cfg
 pip-selfcheck.json
 
+### asdf ###
+/.tool-versions
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
