@@ -6,7 +6,8 @@
     <title>{% block title %}Enquestes Online{% endblock %}</title>
     <meta name="author" content="DevPovoa" />
     <meta name="robots" content="index, follow" />
-    {% block meta %}{% endblock %}
+    {% block meta %}{% endblock %} {% load static %}
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}" />
   </head>
   <body>
     <header>

@@ -1,0 +1,2 @@
+Arquivos base.html serve como padrão e modelo para todos os outros. 
+Ele extende tags e os outros herdam.

@@ -1,12 +1,12 @@
-{% extends "polls/base.html" %} {% block title %}Resultado: {{
-question.question_text }} | Enquetes Online{% endblock %} {% block meta %}
+{% extends "polls/base.html" %}{% block title %}Lista de Enquetes Ativas |
+Enquestes Online{% endblock %} {% block meta %}
 <meta
   name="description"
-  content="Veja o resultado da enquete: {{ question.question_text }}"
+  content="See the poll results for: {{ question.question_text }}"
 />
 {% endblock %} {% block content %}
 <section>
-  <h1>Resultado da Enquete</h1>
+  <h1>Poll Results</h1>
   <h2>{{ question.question_text }}</h2>
 
   <ul>
